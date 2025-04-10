@@ -16,15 +16,15 @@ MIN_BALANCE = 0.00001  # Minimum balance to consider
 # Blockchain configuration
 CONFIG = {
     'eth': {
-        'provider': 'https://mainnet.infura.io/v3/YOUR_INFURA_KEY',
+        'provider': 'https://mainnet.infura.io/v3/d3011414c0114807911c1b6cea9d79f4',
         'scan_api': 'https://api.etherscan.io/api',
-        'api_key': 'YOUR_ETHERSCAN_KEY',
+        'api_key': 'V6IVNYQX5GT6449MZ7CSI4IY5CKB2VZ64J',
         'symbol': 'ETH'
     },
     'bsc': {
         'provider': 'https://bsc-dataseed.binance.org/',
         'scan_api': 'https://api.bscscan.com/api',
-        'api_key': 'YOUR_BSCSCAN_KEY',
+        'api_key': '7TE7WEGMD443RZJ9I1BDHVEFB5FEIKD6W9',
         'symbol': 'BNB'
     }
 }
