@@ -1,81 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
-  background-color: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
 }
 
 .logo {
-  font-size: 32px;
-  color: #4fc3f7; /* biru muda */
-  font-weight: bold;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #3399ff; /* biru muda */
 }
 
-.social-icons a img {
-  width: 32px;
-  margin-left: 20px;
-  transition: transform 0.3s ease;
+.social-icons a {
+    margin-left: 15px;
 }
 
-.social-icons a img:hover {
-  transform: scale(1.2);
+.social-icons img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease;
 }
 
-.home {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px;
-  flex-wrap: wrap;
+.social-icons img:hover {
+    transform: scale(1.2);
 }
 
-.content {
-  flex: 1;
-  max-width: 50%;
+.about {
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.content h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-  opacity: 0;
-  transform: translateX(-30px);
-  transition: all 1s ease-in-out;
+.about-content {
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
 }
 
-.content h1 span {
-  color: #4fc3f7;
+.profile-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #3399ff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.content p {
-  font-size: 18px;
-  color: #444;
-  opacity: 0;
-  transform: translateX(-30px);
-  transition: all 1s ease-in-out 0.3s;
+.about-text {
+    flex: 1;
+    min-width: 280px;
 }
 
-.profile-picture-container {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  max-width: 50%;
-  margin-top: 30px;
+.about-text h1 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 1rem;
 }
 
-.profile-picture {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  border: 6px solid #1e2a78;
-  object-fit: cover;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+.about-text p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icons {
+        margin-top: 1rem;
+    }
 }
